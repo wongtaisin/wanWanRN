@@ -2,7 +2,7 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2026-01-28 10:35:28
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2026-01-30 08:11:26
+ * @LastEditTime: 2026-02-06 14:58:57
  * @FilePath: \wanWanRN\src\views\Home\index.tsx
  * @Description:
  *
@@ -41,6 +41,8 @@ const tableData = [
 ]
 
 const Home = () => {
+  console.log('ITEM_SIZE', ITEM_SIZE, SCREEN_WIDTH, tableData)
+
   return (
     <>
       <Header title="首页" />
@@ -67,6 +69,7 @@ const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingTop: 16,
     paddingHorizontal: PADDING_HORIZONTAL // 和计算一致
   },
   flexContainer: {
