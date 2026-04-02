@@ -26,18 +26,17 @@ function Grid<T>({
       <View style={styles.wrap}>
         {data.map((item, index) => {
           const isLastColumn = (index + 1) % columns === 0
+          const itemStyle = {
+            width: itemSize,
+            height: itemSize,
+            marginRight: isLastColumn ? 0 : spacing,
+            marginBottom: spacing
+          }
 
           return (
             <View
               key={index}
-              style={[
-                {
-                  width: itemSize,
-                  height: itemSize,
-                  marginRight: isLastColumn ? 0 : spacing,
-                  marginBottom: spacing
-                }
-              ]}
+              style={itemStyle}
             >
               {renderItem(item, index, itemSize)}
             </View>

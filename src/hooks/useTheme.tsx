@@ -1,14 +1,11 @@
-import { useMemo } from 'react' // 用于缓存计算结果，避免重复计算
-import { Appearance } from 'react-native'
-
-const colorScheme = Appearance.getColorScheme() // 获取当前颜色方案
+import { useColorScheme } from 'react-native'
 
 const useTheme = () => {
-  const isDark = useMemo(() => colorScheme === 'dark', [colorScheme])
+  const colorScheme = useColorScheme()
+  const isDark = colorScheme === 'dark'
 
-  const backgroundColor = useMemo(() => (isDark ? '#222222' : '#fff'), [isDark])
-
-  const color = useMemo(() => (isDark ? '#fff' : '#000'), [isDark])
+  const backgroundColor = isDark ? '#222222' : '#fff'
+  const color = isDark ? '#fff' : '#000'
 
   return { color, isDark, backgroundColor }
 }

@@ -3,7 +3,7 @@
  * @Date: 2026-01-28 10:35:28
  * @LastEditors: wingddd wongtaisin1024@gmail.com
  * @LastEditTime: 2026-02-06 14:58:57
- * @FilePath: \wanWanRN\src\views\Home\index.tsx
+ * @FilePath: \wanWanRN\src\pages\Home\index.tsx
  * @Description:
  *
  * Copyright (c) 2026 by wongtaisin1024@gmail.com, All Rights Reserved.

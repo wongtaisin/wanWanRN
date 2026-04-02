@@ -9,7 +9,7 @@
 import React from 'react'
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native'
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context'
-import Home from './src/views/Home'
+import Home from './src/pages/Home'
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark'
