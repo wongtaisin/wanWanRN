@@ -1,3 +1,13 @@
+/*
+ * @Author: wingddd wongtaisin1024@gmail.com
+ * @Date: 2026-02-26 13:57:02
+ * @LastEditors: wingddd wongtaisin1024@gmail.com
+ * @LastEditTime: 2026-04-03 09:24:27
+ * @FilePath: \wanWanRN\App.tsx
+ * @Description:
+ *
+ * Copyright (c) 2026 by wongtaisin1024@gmail.com, All Rights Reserved.
+ */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
