@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   item: {
     width: ITEM_SIZE,
     height: ITEM_SIZE,
-    backgroundColor: 'deepskyblue',
+    // backgroundColor: 'deepskyblue',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: ITEM_SPACING,
@@ -92,9 +92,9 @@ const styles = StyleSheet.create({
     borderRadius: 8
   },
   itemText: {
-    fontSize: 16,
+    fontSize: 14,
     textAlign: 'center',
-    color: '#fff'
+    color: '#333'
   },
   itemNoMargin: {
     marginRight: 0
