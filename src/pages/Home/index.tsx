@@ -2,7 +2,7 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2026-01-28 10:35:28
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2026-04-06 08:27:15
+ * @LastEditTime: 2026-04-03 10:22:45
  * @FilePath: \wanWanRN\src\pages\Home\index.tsx
  * @Description:
  *
@@ -11,8 +11,7 @@
 import { Button, Icon } from '@ant-design/react-native'
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import Header from '../../components/common/Header'
-import SvgIcon from '../../components/Svg'
-import SvgComponents from '../../components/svg/index'
+import CustomIcon from '../../components/CustomIcon'
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window')
 
@@ -27,20 +26,20 @@ const AVAILABLE_WIDTH = SCREEN_WIDTH - PADDING_HORIZONTAL * 2
 const ITEM_SIZE = (AVAILABLE_WIDTH - ITEM_SPACING * 3) / 4
 
 const tableData = [
-  { label: '吃', prop: 'eat', icon: SvgComponents.eatSvg },
-  { label: '喝', prop: 'drink', icon: SvgComponents.drinkSvg },
-  { label: '玩', prop: 'play', icon: SvgComponents.playSvg },
-  { label: '乐', prop: 'glad', icon: SvgComponents.gladSvg },
-  { label: '过路费', prop: 'tolls', icon: SvgComponents.tollsSvg },
-  { label: '车油', prop: 'oil', icon: SvgComponents.oilSvg },
-  { label: '停车费', prop: 'parking', icon: SvgComponents.parkingSvg },
-  { label: '交通费', prop: 'traffic', icon: SvgComponents.trafficSvg },
-  { label: '超市', prop: 'supermarket', icon: SvgComponents.supermarketSvg },
-  { label: '网购', prop: 'online_shopping', icon: SvgComponents.onlineShoppingSvg },
-  { label: '话费', prop: 'phone_bill', icon: SvgComponents.phoneBillSvg },
-  { label: '红包', prop: 'red_packet', icon: SvgComponents.redPacketSvg },
-  { label: 'vip', prop: 'vip', icon: SvgComponents.vipSvg },
-  { label: '其他', prop: 'other', icon: SvgComponents.otherSvg }
+  { label: '吃', prop: 'eat', icon: 'food-mifan' },
+  { label: '喝', prop: 'drink', icon: 'kekoukele2' },
+  { label: '玩', prop: 'play', icon: 'a-GamePadyouxishoubing' },
+  { label: '乐', prop: 'glad', icon: 'zhoubianyule' },
+  { label: '过路费', prop: 'tolls', icon: 'guolufei' },
+  { label: '车油', prop: 'oil', icon: 'jiayouzhan2' },
+  { label: '停车费', prop: 'parking', icon: 'tingchefeiyong' },
+  { label: '交通费', prop: 'traffic', icon: 'gongjiaoche' },
+  { label: '超市', prop: 'supermarket', icon: 'chaoshi2' },
+  { label: '网购', prop: 'online_shopping', icon: 'wanggou' },
+  { label: '话费', prop: 'phone_bill', icon: 'dianhua' },
+  { label: '红包', prop: 'red_packet', icon: 'hongbao2' },
+  { label: 'vip', prop: 'vip', icon: 'vip1' },
+  { label: '其他', prop: 'other', icon: 'qitafeiyong' }
 ]
 
 const Home = () => {
@@ -61,10 +60,9 @@ const Home = () => {
               ]}
             >
               <View>
-                <SvgIcon icon={item.icon} />
+                <CustomIcon name={item.icon as string} size={28} color="#000" />
                 <Text style={styles.itemText}>{item.label}</Text>
               </View>
-              <Text>{'\ue858'}</Text>
             </View>
           ))}
         </View>

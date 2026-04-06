@@ -10,8 +10,12 @@
  * Copyright (c) 2026 by wongtaisin1024@gmail.com, All Rights Reserved.
  */
 module.exports = {
+  project: {
+    ios: {},
+    android: {}
+  },
   assets: [
-    './src/assets/fonts', // 本地字体文件路径
-    'node_modules/@ant-design/icons-react-native/fonts' // 字体文件路径
-  ]
+    './src/assets/fonts/', // 阿里矢量图
+    'node_modules/@ant-design/icons-react-native/fonts' // Ant Design 图标字体文件路径
+  ] // 你的资源路径
 }
