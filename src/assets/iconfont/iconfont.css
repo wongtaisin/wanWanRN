@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 5039356 */
+  /* Color fonts */
+  src: 
+       url('iconfont.woff2?t=1775436657092') format('woff2'),
+       url('iconfont.woff?t=1775436657092') format('woff'),
+       url('iconfont.ttf?t=1775436657092') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dianpu1:before {
+  content: "\e670";
+}
+
+.icon-home:before {
+  content: "\e604";
+}
+
+.icon-dianpu:before {
+  content: "\f19c";
+}
+
+.icon-tongjitubiao:before {
+  content: "\e65e";
+}
+
+.icon-tubiaotongji:before {
+  content: "\e682";
+}
+
+.icon-mingxi:before {
+  content: "\e637";
+}
+
+.icon-wode:before {
+  content: "\ecb4";
+}
+
+.icon-mifan:before {
+  content: "\e643";
+}
+
+.icon-food-mifan:before {
+  content: "\e858";
+}
+
+.icon-huangmenjimifan:before {
+  content: "\101a0";
+}
+
+.icon-icon-test:before {
+  content: "\e602";
+}
+
+.icon-tingchefeiyong:before {
+  content: "\e6e1";
+}
+
+.icon-jiayouzhanxinxi:before {
+  content: "\e600";
+}
+
+.icon-jiayouzhan2:before {
+  content: "\e73c";
+}
+
+.icon-qitafeiyong:before {
+  content: "\e859";
+}
+
+.icon-zhoubianyule:before {
+  content: "\e776";
+}
+
+.icon-dianhua:before {
+  content: "\e636";
+}
+
+.icon-gongjiaoche:before {
+  content: "\e61d";
+}
+
+.icon-guolufei:before {
+  content: "\e64b";
+}
+
+.icon-shoubing:before {
+  content: "\e645";
+}
+
+.icon-a-GamePadyouxishoubing:before {
+  content: "\e7ad";
+}
+
+.icon--online-shop:before {
+  content: "\e603";
+}
+
+.icon-wanggou:before {
+  content: "\e634";
+}
+
+.icon-chaoshi2:before {
+  content: "\e611";
+}
+
+.icon-vip1:before {
+  content: "\e60b";
+}
+
+.icon-vipSolid01:before {
+  content: "\e6f2";
+}
+
+.icon-VIP:before {
+  content: "\e6be";
+}
+
+.icon-hongbao1:before {
+  content: "\e626";
+}
+
+.icon-hongbao2:before {
+  content: "\e6b2";
+}
+
+.icon-a-11-jiayoufei:before {
+  content: "\e64a";
+}
+
+.icon-chifan:before {
+  content: "\e619";
+}
+
+.icon-wanju:before {
+  content: "\e624";
+}
+
+.icon-hejiu:before {
+  content: "\e601";
+}
+
+.icon-yule:before {
+  content: "\e76e";
+}
+
+.icon-kekoukele2:before {
+  content: "\e60f";
+}
+
