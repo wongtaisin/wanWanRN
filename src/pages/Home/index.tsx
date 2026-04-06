@@ -2,12 +2,13 @@
  * @Author: wingddd wongtaisin1024@gmail.com
  * @Date: 2026-01-28 10:35:28
  * @LastEditors: wingddd wongtaisin1024@gmail.com
- * @LastEditTime: 2026-04-03 10:22:45
+ * @LastEditTime: 2026-04-06 08:27:15
  * @FilePath: \wanWanRN\src\pages\Home\index.tsx
  * @Description:
  *
  * Copyright (c) 2026 by wongtaisin1024@gmail.com, All Rights Reserved.
  */
+import { Button, Icon } from '@ant-design/react-native'
 import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import Header from '../../components/common/Header'
 import SvgIcon from '../../components/Svg'
@@ -63,9 +64,13 @@ const Home = () => {
                 <SvgIcon icon={item.icon} />
                 <Text style={styles.itemText}>{item.label}</Text>
               </View>
+              <Text>{'\ue858'}</Text>
             </View>
           ))}
         </View>
+        <Button>
+          <Icon name="android" />
+        </Button>
       </View>
     </>
   )
