@@ -10,8 +10,8 @@ import {
   TouchableOpacity,
   View
 } from 'react-native'
-import { LoginRequest, signIn } from '../../services/auth'
 import { getApiErrorMessage } from '../../services'
+import { LoginRequest, signIn } from '../../services/auth'
 
 const Login = ({ onLoginSuccess }: { onLoginSuccess: () => void }) => {
   const [username, setUsername] = useState('')
@@ -41,7 +41,7 @@ const Login = ({ onLoginSuccess }: { onLoginSuccess: () => void }) => {
     try {
       const result = await signIn(payload)
 
-      if (result.code === 0 || result.code === 200) {
+      if (result.code === 200) {
         Alert.alert('成功', '登录成功')
         onLoginSuccess()
         return
